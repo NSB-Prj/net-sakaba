@@ -1,13 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>ネット酒場Top</title>
+    <title>NSB-netpub - Top</title>
+    <link rel="stylesheet" href="../assets/css/index.css">
 </head>
-<body>
-    <div class="sight-logo">
-        <img src="../assets/img/nsb-sight-logo.png">
+<header>
+    <h1><a href="index.html"><img src="../assets/img/logo.png" alt="">NSB<br>netpub</a></h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">会員情報</a></li>
+            <li><a href="news.html">ログイン</a></li>
+            <li><a href="about.html">ログアウト</a></li>
+        </ul>
+    </nav>
+</header>
+<body id="top">
+<section>
+    <div id="photo">
+        <h1>NSB<br>netpub</h1>
+        <p>お酒を飲みながらあれこれ語る酒場です。</p>
+        <form id="selectRoom">
+            <label>Create New Room!
+                <input type="text">
+                <label> or
+                    <select name="room">
+                        <option value=""></option>
+                        <option value="...">部屋１</option>
+                        <option value="...">部屋２</option>
+                        <option value="...">部屋３</option>
+                        <option value="...">部屋４</option>
+                        <option value="...">部屋５</option>
+                    </select>
+                </label>
+            </label><br><br>
+            <input type="submit" value="Let Go!">
+        </form>
     </div>
+</section>
 
 </body>
+<footer>
+    <small>Copyrifht &copy; NSBprj, all rigts reserved.</small>
+</footer>
 </html>
