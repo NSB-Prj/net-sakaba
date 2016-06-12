@@ -8,11 +8,16 @@
 <header>
     <h1><a href="index.html"><img src="../assets/img/logo.png" alt="">NSB<br>netpub</a></h1>
     <nav>
-        <ul>
-            <li><a href="index.html">会員情報</a></li>
-            <li><a href="news.html">ログイン</a></li>
-            <li><a href="about.html">ログアウト</a></li>
-        </ul>
+        <div id="icon" onclick="openPopUp()" title="View Click">
+            <img src="../assets/img/pubDoor.jpeg">
+            <div id="fukidashi" onclick="openPopUp()">
+                <ul>
+                    <li><a href="index.html">Profile</a></li>
+                    <li><a href="news.html">Login</a></li>
+                    <li><a href="about.html">Logout</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>
 <body id="top">
@@ -39,6 +44,7 @@
     </div>
 </section>
 
+<script src="../assets/javascripts/common.js"></script>
 </body>
 <footer>
     <small>Copyrifht &copy; NSBprj, all rigts reserved.</small>
