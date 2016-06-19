@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>NSB-netpub - MailSend</title>
+    <link rel="stylesheet"  type="text/css"
+          href="../static/css/style.css"
+          th:href="@{/css/style.css}" />
+
+</head>
+<header>
+    <h1><a href="Top.html"><img src="../static/img/logo.png" th:src="@{/img/logo.png}" alt=""/>NSB<br/>netpub</a></h1>
+    <nav>
+        <div id="icon" onclick="openPopUp()" title="View Click" style="visibility: hidden">
+            <img src="../static/img/pubDoor.jpeg" th:src="@{/img/pubDoor.jpeg}" alt="メニューリスト"/>
+            <div id="fukidashi" onclick="openPopUp()">
+                <ul>
+                    <li><a href="Top.html">Profile</a></li>
+                    <li><a href="news.html">Login</a></li>
+                    <li><a href="about.html">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header >
+<body id="top">
+<section>
+    <div id="photo">
+        <h1>NSB<br />netpub</h1>
+        <p>会員登録用メールを送信します</p>
+        <form id="selectRoom">
+            <label>Mail   : </label><input type="email" size="30" maxlength="50" placeholder='aaa@example.com' pattern=".+@.+\..+"  required autofocus/><br/><br/>
+            <br/><br/>
+            <input type="submit" value="Send!" th:method="post"/>
+        </form>
+    </div>
+</section>
+
+<script src="../static/javascripts/common.js" th:src="@{/javascripts/common.js}"></script>
+</body>
+<footer>
+    <small>Copyrifht &copy; NSBprj, all rigts reserved.</small>
+</footer>
+</html>

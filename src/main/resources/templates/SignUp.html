@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>NSB-netpub - Sign Up</title>
+    <link rel="stylesheet"  type="text/css"
+          href="../static/css/style.css"
+          th:href="@{/css/style.css}" />
+
+</head>
+<header>
+    <h1><a href="Top.html"><img src="../static/img/logo.png" th:src="@{/img/logo.png}" alt=""/>NSB<br/>netpub</a></h1>
+    <nav>
+        <div id="icon" onclick="openPopUp()" title="View Click" style="visibility: hidden">
+            <img src="../static/img/pubDoor.jpeg" th:src="@{/img/pubDoor.jpeg}" alt="メニューリスト"/>
+            <div id="fukidashi" onclick="openPopUp()">
+                <ul>
+                    <li><a href="Top.html">Profile</a></li>
+                    <li><a href="news.html">Login</a></li>
+                    <li><a href="about.html">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header >
+<body id="top">
+<section>
+    <div id="photo">
+        <h1>NSB<br />netpub</h1>
+        <p>あと少しで会員登録完了！</p>
+        <form id="selectRoom">
+                <input type="password" name="password" size="30" maxlength="8" placeholder='password(8文字)'　pattern="^[0-9A-Za-z]+$"  required/><br/><br/>
+                <input type="password" name="passwordConfirm" size="30" maxlength="8" placeholder='password(確認)'　pattern="^[0-9A-Za-z]+$"  required/><br/><br/>
+                <br/><br/>
+            <input type="submit" value="Sign Up!" th:method="post"/>
+        </form>
+            </div>
+</section>
+
+<script src="../static/javascripts/common.js" th:src="@{/javascripts/common.js}"></script>
+</body>
+<footer>
+    <small>Copyrifht &copy; NSBprj, all rigts reserved.</small>
+</footer>
+</html>

@@ -9,20 +9,20 @@
 
 </head>
 <header>
-    <h1><a href="index.html"><img src="../static/img/logo.png" th:src="@{/img/logo.png}" alt=""/>NSB<br/>netpub</a></h1>
+    <h1><a href="Top.html"><img src="../static/img/logo.png" th:src="@{/img/logo.png}" alt=""/>NSB<br/>netpub</a></h1>
     <nav>
         <div id="icon" onclick="openPopUp()" title="View Click">
             <img src="../static/img/pubDoor.jpeg" th:src="@{/img/pubDoor.jpeg}" alt="メニューリスト"/>
             <div id="fukidashi" onclick="openPopUp()">
                 <ul>
-                    <li><a href="index.html">Profile</a></li>
+                    <li><a href="Top.html">Profile</a></li>
                     <li><a href="news.html">Login</a></li>
                     <li><a href="about.html">Logout</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-</header>
+</header >
 <body id="top">
 <section>
     <div id="photo">
@@ -34,11 +34,7 @@
                 <label> or
                     <select name="room">
                         <option value=""></option>
-                        <option value="...">部屋１</option>
-                        <option value="...">部屋２</option>
-                        <option value="...">部屋３</option>
-                        <option value="...">部屋４</option>
-                        <option value="...">部屋５</option>
+                        <option th:each="room:${rooms}" th:value="${room.roomName}" th:text="${room.roomName}"></option>
                     </select>
                 </label>
             </label><br/><br/>

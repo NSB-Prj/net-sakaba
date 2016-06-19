@@ -20,10 +20,10 @@ p {
 }
 
 /* ヘッダー */
-header {
+header{
     background-color: #ffffff;
     border-bottom: solid 1px #aaaaaa;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     -webkit-box-shadow: 0 1px 7px #aaaaaa;
     box-shadow: 0 1px 7px #aaaaaa;
     padding: 5px;
@@ -365,3 +365,23 @@ div#fukidashi ul a{
 html {
     overflow-y: scroll;
 }
+
+input {
+    font-size: small;
+}
+
+/* Google Chrome, Safari, Opera 15+, Android, iOS */
+::-webkit-input-placeholder {
+    font-size: small; }
+
+/* Firefox 18- */
+:-moz-placeholder {
+    font-size: small; }
+
+/* Firefox 19+ */
+::-moz-placeholder {
+    font-size: small; }
+
+/* IE 10+ */
+:-ms-input-placeholder {
+    font-size: small; }
