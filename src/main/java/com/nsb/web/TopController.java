@@ -23,4 +23,14 @@ public class TopController {
         model.addAttribute("rooms", rooms);
         return "Top";
     }
+
+    @RequestMapping(value = "SignUp", method = RequestMethod.GET)
+    String SignUp(){
+        return "MailSend";
+    }
+
+    @RequestMapping(value = "Login", method = RequestMethod.GET)
+    String Login(){
+        return "Login";
+    }
 }

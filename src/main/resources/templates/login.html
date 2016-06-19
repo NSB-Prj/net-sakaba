@@ -1,40 +1,48 @@
 <!DOCTYPE html>
 <html lang="ja" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>NSB-netpub - Login</title>
-    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet"  type="text/css"
+          href="../static/css/style.css"
+          th:href="@{/css/style.css}" />
 </head>
 <header>
-    <h1><a href="Top.html"><img src="../static/img/logo.png" alt="">NSB<br>netpub</a></h1>
+    <h1><a href="Top.html"><img src="../static/img/logo.png" alt="" />NSB<br/>netpub</a></h1>
     <nav>
-        <ul>
-            <li><a href="Top.html">会員情報</a></li>
-            <li><a href="news.html">ログイン</a></li>
-            <li><a href="about.html">ログアウト</a></li>
-        </ul>
+        <div id="icon" onclick="openPopUp()" title="View Click">
+            <img src="../static/img/pubDoor.jpeg" th:src="@{/img/pubDoor.jpeg}" alt="メニューリスト"/>
+            <div id="fukidashi" onclick="openPopUp()">
+                <ul>
+                    <li><a href="MailSend.html">SignUp</a></li>
+                    <li><a href="Login.html">Login</a></li>
+                    <li><a href="about.html">Logout</a></li>
+
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>
 <body id="top">
 <section>
     <div id="photo">
-        <h1>NSB<br>netpub</h1>
+        <h1>NSB<br/>netpub</h1>
         <form>
             <table>
                 <tr>
                     <th>ID</th>
-                    <td><input type="email"></td>
+                    <td><input type="email"/></td>
                 </tr>
                 <tr>
                     <th>Pass</th>
-                    <td><input type="password"></td>
+                    <td><input type="password"/></td>
                 </tr>
             </table>
-            <input type="submit">
+            <input type="submit" />
         </form>
     </div>
 </section>
-
+<script src="../static/javascripts/common.js" th:src="@{/javascripts/common.js}"></script>
 </body>
 <footer>
     <small>Copyrifht &copy; NSB Prj, all rigts reserved.</small>
