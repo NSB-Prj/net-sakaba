@@ -17,7 +17,7 @@ import javax.persistence.*;
 public class Room {
     @Id
     @GeneratedValue
-    private Integer roomNum;
+    public Integer roomNum;
     @Column
-    private String roomName;
+    public String roomName;
 }
